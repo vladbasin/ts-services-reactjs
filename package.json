@@ -1,0 +1,34 @@
+{
+    "name": "@vladbasin/ts-services-reactjs",
+    "version": "1.0.1",
+    "description": "React JS integrations for services",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "scripts": {
+        "prepublishOnly": "rm -r -f dist && cd src && barrelsby --delete && cd .. && tsc"
+    },
+    "author": "Vlad Basin",
+    "license": "GPL-3.0-only",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/vladbasin/ts-services-reactjs.git"
+    },
+    "devDependencies": {
+        "@types/lodash": "^4.14.159",
+        "@types/react": "^16.9.46",
+        "barrelsby": "^2.2.0",
+        "typescript": "^3.9.7",
+        "lodash": "^4.17.20",
+        "react": "^16.13.1"
+    },
+    "peerDependencies": {
+        "react": "*"
+    },
+    "dependencies": {
+        "@vladbasin/ts-dependencies": "^1.0.1",
+        "@vladbasin/ts-dependencies-reactjs": "^1.0.6",
+        "@vladbasin/ts-result": "^1.0.1",
+        "@vladbasin/ts-services": "^1.0.1",
+        "@vladbasin/ts-types": "^1.0.2"
+    }
+}
